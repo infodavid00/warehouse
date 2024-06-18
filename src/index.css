@@ -1,0 +1,58 @@
+
+@font-face {
+  font-family:'reg' ;
+  font-style: normal;
+  font-weight: 500;
+  src: local('reg'),local('reg'),url(./assets/Outfit-Regular.ttf)format('truetype');
+}
+
+@font-face {
+  font-family:'bold' ;
+  font-style: normal;
+  font-weight: 800;
+  src: local('bold'),local('bold'),url(./assets/Outfit-SemiBold.ttf)format('truetype');
+}
+
+@font-face {
+  font-family:'extrabold' ;
+  font-style: normal;
+  font-weight: 800;
+  src: local('extrabold'),local('extrabold'),url(./assets/Outfit-ExtraBold.ttf)format('truetype');
+}
+
+
+:root {
+  --bgA : #fff;
+  --bgB : dodgerblue;
+  --bgC : #e9e9e9;
+  --clA : rgba(0,0,0,0.9);
+}
+
+body {
+  background-color: var(--bgC);
+  font-family: 'reg', sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  outline:none;
+  border: none;
+}
+
+.main-cont {
+  margin-top: 4em;
+}
+@media (max-width: 760px) {
+.main-cont {
+  margin-top: 6em;
+  padding: 0.6em 1em;
+}
+}
+@media (min-width: 760px) {
+.main-cont {
+  padding: 0.6em 5.4em;
+}
+}

@@ -1,0 +1,124 @@
+
+
+#loginBody {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#cont1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.cont1-pack {
+  width: 70%;
+}
+.cont1-pack-title {
+  font-family: 'bold', sans-serif;
+  margin-bottom: 0.5em;
+  margin-left: 0.2em;
+}
+.cont1-pack input {
+  padding: 11px;
+  background-color: #f1f1f1;
+  width: 90%;
+  border-radius: 10px;
+  font-family: 'regular', sans-serif;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 0.8em;
+}
+.cont1-pack::placeholder {
+  font-family: 'regular', sans-serif;
+}
+.cont1-pack input:hover {
+  border: 1px solid var(--bgB);
+}
+#cont1 button {
+  padding: 14px;
+  background-color: var(--bgB);
+  width: 90%;
+  border-radius: 10px;
+  color: white;
+  font-family: 'extrabold', sans-serif;
+  cursor: pointer;
+}
+
+
+#cont2 {
+  width: 50%;
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login-img {
+  width: 600px;
+}
+
+
+
+.login-checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.login-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.login-checkbox-label {
+  font-size: 16px;
+  color: #333;
+}
+.login-checkbox:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.cont1-rm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -0.5em;
+}
+.input-checkbox-label {
+  margin-top: -0.8em;
+  margin-left: 0.5em;
+}
+
+
+@media (min-width: 760px) {
+#cont1 , #cont2{
+  height: 100vh;
+}
+}
+@media (max-width: 760px) {
+#loginBody {
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#cont1 {
+  width: 90%;
+}
+.cont1-pack {
+  width: 100%;
+}
+.cont1-pack input, #cont1 button {
+  width: 100%;
+}
+#cont2 {
+  width: 80%;
+  background-color: transparent;
+  margin-top: -3em;
+}
+}
